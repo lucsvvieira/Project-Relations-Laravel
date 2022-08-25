@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\AddressController;
 use Illuminate\Support\Facades\Route;
 
 // Rota para listar os usuários que temos cadastrados.
