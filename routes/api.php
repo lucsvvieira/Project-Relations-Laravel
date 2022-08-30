@@ -23,6 +23,14 @@ Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
 // Incluir um novo endereço
 Route::post('/addresses', [AddressController::class, 'create']);
 
+// Invoices
+
+Route::get('/invoices', [InvoiceController::class, 'index']);
 // Incluir uma nova invoice
 Route::post('/invoices', [InvoiceController::class, 'createInvoice']);
+// Listar uma invoice específica
+Route::get('/invoices/{id}', [InvoiceController::class, 'findOne']);
+
+
+
 

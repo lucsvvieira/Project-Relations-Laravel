@@ -18,4 +18,9 @@ class InvoiceController extends Controller
         $invoice = Invoice::create($data);
         return $invoice;
     }
+
+    public function findOne(Request $r) {
+        $invoice = Invoice::find($r->id);
+        return $invoice->user;
+    }
 }
